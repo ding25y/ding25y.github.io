@@ -3,13 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 /* Variables */
 /* General */
 html {
-  background: rgba(42, 85, 110, 0.808);
+  background: #272e41;
   color: #f3f3f3;
-  font-family: "Nanum Pen Script", cursive;
+  font-family: "Josefin Sans", cursive;
   font-size: 2rem;
   font-weight: normal;
   height: 100%;
@@ -62,11 +62,11 @@ a:hover {
   margin: auto;
   max-width: 75rem;
   padding: 0;
-  background-color: rgba(42, 85, 110, 0.808);
+  background-color: #272e41;
 }
 
 .layout .card {
-  background: rgba(42, 85, 110, 0.808);
+  background: #272e41;
   max-width: 1000px;
   border-radius: 2rem;
   margin: auto;
@@ -103,7 +103,7 @@ a:hover {
 /* Preloader */
 #preloader {
   align-items: center;
-  background: rgba(42, 85, 110, 0.808);
+  background: #272e41;
   display: flex;
   height: 100%;
   justify-content: center;
@@ -161,12 +161,7 @@ a:hover {
 }
 
 /* Navigation */
-nav {
-  padding: 0;
-  background-color: rgba(42, 85, 110, 0.808);
-}
-
-nav .container {
+.navigation {
   max-width: 1200px;
   margin: 0 auto;
   display: table;
@@ -174,14 +169,14 @@ nav .container {
   padding: 0 20px;
 }
 
-nav .container > div {
+.navigation > div {
   display: table-cell;
   width: 50%;
   height: 70px;
   vertical-align: middle;
 }
 
-nav .container a.logo {
+.navigation a.logo {
   display: inline-block;
   cursor: pointer;
   font-family: "IM Fell DW Pica SC", serif;
@@ -195,22 +190,22 @@ nav .container a.logo {
   opacity: 0.5;
 }
 
-nav .container a.logo:hover {
+.navigation a.logo:hover {
   color: inherit;
   opacity: 0.7;
 }
 
-nav .container a {
+.navigation a {
   transition: 0.3s all 0s ease;
 }
 
-nav .container .links {
+.navigation .links {
   text-align: right;
   font-family: "IM Fell DW Pica SC", serif;
   height: auto;
 }
 
-nav .container .links a {
+.navigation .links a {
   font-family: "IM Fell DW Pica SC", serif;
   text-transform: uppercase;
   font-size: 22px;
@@ -218,18 +213,18 @@ nav .container .links a {
   letter-spacing: 2px;
 }
 
-nav .container .links a:hover {
+.navigation .links a:hover {
   color: inherit;
   opacity: 0.7;
 }
 
-nav .container .links > a {
+.navigation .links > a {
   margin-right: 30px;
 }
 
 /* Footer */
 .footer {
-  background: rgba(42, 85, 110, 0.808);
+  background: #272e41;
   color: #f3f3f3;
   margin: 0.5rem;
   padding: 1rem;
@@ -240,22 +235,35 @@ nav .container .links > a {
   color: #f3f3f3;
 }
 .footer a:hover, .footer a:focus {
-  background: rgba(42, 85, 110, 0.808);
+  background: #272e41;
   color: #f3f3f3;
 }
 
 /* Landing Page */
 #landing {
-  background: rgba(42, 85, 110, 0.808);
+  background: #272e41;
   color: #f3f3f3;
   display: flex;
   height: 100%;
   text-align: center;
 }
 
+#landing::before {
+  content: "";
+  background-image: url(/assets/images/Quinn2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.6;
+  /* Add the blur effect */
+}
+
 .landing-image {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/94/Starry_Night_Over_the_Rhone.jpg");
-  background-color: #529a9c;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -271,20 +279,18 @@ nav .container .links > a {
 }
 
 .landing-title {
-  background-color: rgba(236, 239, 243, 0.856);
   left: 10%;
   width: 100%;
-  height: 30%;
-  top: 20%;
+  height: 20%;
+  top: 30%;
   position: absolute;
   border-radius: 0.8em;
   text-align: match-parent;
 }
 
 .landing-subtitle {
-  background-color: rgba(236, 239, 243, 0.856);
   position: absolute;
-  border-radius: 0.8em;
+  border-radius: 0.6em;
   text-align: match-parent;
   left: 50%;
   width: 60%;
@@ -292,11 +298,28 @@ nav .container .links > a {
   top: 60%;
 }
 
-.landing-subtitle h1 {
+.landing-subtitle h2 {
   position: absolute;
-  color: rgba(42, 85, 110, 0.808);
-  top: -80%;
-  left: 15%;
+  color: #272e41;
+  top: -40%;
+  left: 2%;
+}
+
+.landing-subtitle2 {
+  position: absolute;
+  border-radius: 0.5em;
+  text-align: match-parent;
+  left: 80%;
+  width: 30%;
+  height: 7%;
+  top: 77%;
+}
+
+.landing-subtitle2 h3 {
+  position: absolute;
+  color: #272e41;
+  top: -40%;
+  left: 2%;
 }
 
 .landing-title svg {
@@ -550,7 +573,7 @@ nav .container .links > a {
   text-align: center;
 }
 .timeline-wrapper .flag {
-  background: rgba(42, 85, 110, 0.808);
+  background: #272e41;
   border-radius: 0.5rem;
   font-weight: 300;
   padding: 0.25rem 0.5rem;
@@ -582,13 +605,13 @@ nav .container .links > a {
   margin-top: 0.3rem;
 }
 .timeline-wrapper .time {
-  background: rgba(42, 85, 110, 0.808);
+  background: #272e41;
   border-radius: 0.5rem;
   display: inline-block;
   padding: 0.6rem;
 }
 .timeline-wrapper .desc {
-  background: rgba(42, 85, 110, 0.808);
+  background: #272e41;
   border-radius: 1rem;
   margin: 1em 0 0 0;
   padding: 0.75em;

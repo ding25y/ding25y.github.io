@@ -4,26 +4,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;600&display=swap'); //medium bold
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap"); //numbers
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap'); //nav
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 /* Variables */
 
 $small-screen: 48em !default;
 $medium-screen: 62em !default;
 $large-screen: 1200px;//75em !default;
-$font-family: 'Nanum Pen Script', cursive;
+$font-family: 'Josefin Sans', cursive;
 $font-family-numbers: "Josefin Sans", sans-serif;
 $font-family-nav: 'IM Fell DW Pica SC', serif;
 $font-size-base: 2rem !default;
 $font-size-h1: 2rem !default;
 $font-weight-strong: 300;
 $text-color: #f3f3f3!default;
-$bg-color:rgba(42, 85, 110, 0.808);//#363606;//#4f4f48;//#6e6e64;//rgba(79,79,72,1);//#4f4f3a;//
+$bg-color:rgb(39, 46, 65);//rgba(42, 85, 110, 0.808);//#363606;//#4f4f48;//#6e6e64;//rgba(79,79,72,1);//#4f4f3a;//
 $card-bg-color: linear-gradient(
   145deg,
   rgba(115, 115, 115, 0.15) 15%,
   rgba(43, 45, 47, 1) 80%
 );
 $primary-color: #f3f3f3;
+// $color-test:#92b9dd aeb4ec babeeb
+$color-test:#7dc5f5;
 
 /* General */
 
@@ -217,12 +219,12 @@ a {
 
 /* Navigation */
 
-nav {
-  padding: 0;
-  background-color: $bg-color;
-}
+// nav {
+//   padding: 0;
+//   background-color: $bg-color;
+// }
 
-nav .container {
+.navigation{
   max-width: 1200px;
   margin: 0 auto;
   display: table;
@@ -231,14 +233,14 @@ nav .container {
   
 }
 
-nav .container > div {
+.navigation > div {
   display: table-cell;
   width: 50%;
   height: 70px;
   vertical-align: middle;
 }
 
-nav .container a.logo {
+.navigation a.logo {
   display: inline-block;
   cursor: pointer;
   font-family:  $font-family-nav;
@@ -252,23 +254,23 @@ nav .container a.logo {
   opacity: 0.5;
 }
 
-nav .container a.logo:hover {
+.navigation a.logo:hover {
   color: inherit;
   opacity: 0.7;
 }
 
-nav .container a {
+.navigation a {
   transition: 0.3s all 0s ease;
 }
 
 
-nav .container .links {
+.navigation .links {
   text-align: right;
   font-family: $font-family-nav;
   height: auto;
 }
 
-nav .container .links a {
+.navigation .links a {
   font-family: $font-family-nav;
   text-transform: uppercase;
   font-size: 22px;
@@ -276,12 +278,12 @@ nav .container .links a {
   letter-spacing: 2px;
 }
 
-nav .container .links a:hover {
+.navigation .links a:hover {
   color: inherit;
   opacity: 0.7;
 }
 
-nav .container .links > a {
+.navigation .links > a {
   margin-right: 30px;
 }
 
@@ -311,6 +313,10 @@ nav .container .links > a {
 
 #landing {
   background: $bg-color;
+  // background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/94/Starry_Night_Over_the_Rhone.jpg");//url(/assets/images/Ocean.jpg);
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
   color: $text-color;
   display: flex;
   height: 100%;
@@ -319,10 +325,26 @@ nav .container .links > a {
   text-align: center;
 }
 
+#landing::before {    
+  content: "";
+  background-image: url(/assets/images/Quinn2.jpg);//url("https://upload.wikimedia.org/wikipedia/commons/9/94/Starry_Night_Over_the_Rhone.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: .6;
+  /* Add the blur effect */
+  // filter: blur(0.8px);
+  // -webkit-filter: blur(0.8px);
+}
 
 .landing-image {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/94/Starry_Night_Over_the_Rhone.jpg");
-  background-color: #529a9c;
+  //background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/94/Starry_Night_Over_the_Rhone.jpg");//url(/assets/images/Ocean.jpg);
+  //background-color: #529a9c;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -338,21 +360,22 @@ nav .container .links > a {
   opacity: .8;
 }
 
+
 .landing-title{
-  background-color: rgba(236, 239, 243, 0.856);
+  //background-color: rgba(236, 239, 243, 0.856);
   left: 10%;
   width: 100%;
-  height: 30%;
-  top: 20%;
+  height: 20%;
+  top: 30%;
   position: absolute;
   border-radius:.8em;
   text-align: match-parent;
 }
 
 .landing-subtitle {
-  background-color: rgba(236, 239, 243, 0.856);
+  //background-color: rgba(236, 239, 243, 0.856);
   position: absolute;
-  border-radius:.8em;
+  border-radius:.6em;
   text-align: match-parent;
   left: 50%;
   width: 60%;
@@ -360,11 +383,30 @@ nav .container .links > a {
   top: 60%;
 }
 
-.landing-subtitle h1 {
+.landing-subtitle h2 {
   position: absolute;
   color: $bg-color;//#dd9206;
-  top: -80%;
-  left: 15%;
+  top: -40%;
+  left: 2%;
+
+}
+
+.landing-subtitle2 {
+  //background-color: rgba(236, 239, 243, 0.856);
+  position: absolute;
+  border-radius:.5em;
+  text-align: match-parent;
+  left: 80%;
+  width: 30%;
+  height: 7%;
+  top: 77%;
+}
+
+.landing-subtitle2 h3 {
+  position: absolute;
+  color: $bg-color;//#dd9206;
+  top: -40%;
+  left: 2%;
 
 }
 

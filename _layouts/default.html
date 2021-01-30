@@ -7,7 +7,10 @@
 
     <title>{{ page.title }}</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon-A.png">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-A.png"> -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "/assets/favicon/favicon-32x32.png" | prepend: site.baseurl }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/favicon/favicon-16x16.png" | prepend: site.baseurl }}">
+    <link rel="manifest" href="{{ "/assets/favicon/site.webmanifest" | prepend: site.baseurl }}">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/vendors.min.css">
@@ -18,7 +21,7 @@
     {% seo %}
   </head>
   <body>
-    {% include navigation.html %}
+    <!-- {% include navigation.html %} -->
     {% include landing-page.html %}
     <div class="layout" id="layout">
         <section class="card neumorphism-card-big">

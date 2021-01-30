@@ -1,7 +1,7 @@
 {
   "particles": {
     "number": {
-      "value": 20,
+      "value": 7,
       "density": {
         "enable": true,
         "value_area": 800
@@ -11,7 +11,7 @@
       "value": ["#fff"]
     },
     "shape": {
-      "type": "star",
+      "type": "circle",
       "stroke": {
         "width": 1,
         "color": "#7dc5f5"
@@ -28,7 +28,7 @@
       }
     },
     "size": {
-      "value": 7,
+      "value": 10,
       "random": true,
       "anim": {
         "enable": false,
@@ -43,7 +43,7 @@
     "move": {
       "enable": true,
       "speed": 2,
-      "direction": "bottom",
+      "direction": "top",
       "random": true,
       "straight": false,
       "out_mode": "out",

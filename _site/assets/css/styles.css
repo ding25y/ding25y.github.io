@@ -2,10 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 /* Variables */
 /* General */
-html { background: rgba(42, 85, 110, 0.808); color: #f3f3f3; font-family: "Nanum Pen Script", cursive; font-size: 2rem; font-weight: normal; height: 100%; overflow-x: hidden; }
+html { background: #272e41; color: #f3f3f3; font-family: "Josefin Sans", cursive; font-size: 2rem; font-weight: normal; height: 100%; overflow-x: hidden; }
 
 body { height: 100%; }
 
@@ -25,9 +25,9 @@ a:hover { color: #f3f3f3; }
 .highlight-link:hover { box-shadow: inset 0 -2rem 0 0 #f3f3f3; color: #f3f3f3; }
 
 /* Layout */
-.layout { margin: auto; max-width: 75rem; padding: 0; background-color: rgba(42, 85, 110, 0.808); }
+.layout { margin: auto; max-width: 75rem; padding: 0; background-color: #272e41; }
 
-.layout .card { background: rgba(42, 85, 110, 0.808); max-width: 1000px; border-radius: 2rem; margin: auto; margin-bottom: 4rem; padding: 1rem 4rem; }
+.layout .card { background: #272e41; max-width: 1000px; border-radius: 2rem; margin: auto; margin-bottom: 4rem; padding: 1rem 4rem; }
 
 .layout .card .title { text-align: center; position: relative; }
 
@@ -42,7 +42,7 @@ a:hover { color: #f3f3f3; }
 .neumorphism-card-big { box-shadow: 5px 5px 4px #161718, -5px -5px 4px #404346; }
 
 /* Preloader */
-#preloader { align-items: center; background: rgba(42, 85, 110, 0.808); display: flex; height: 100%; justify-content: center; left: 0; margin: 0.5rem; padding: 0.5rem; position: absolute; right: 0; z-index: 999; }
+#preloader { align-items: center; background: #272e41; display: flex; height: 100%; justify-content: center; left: 0; margin: 0.5rem; padding: 0.5rem; position: absolute; right: 0; z-index: 999; }
 
 #preloader .load { height: 6rem; left: 50%; position: absolute; top: 50%; transform: translate(-50%, -50%); width: 6rem; }
 
@@ -62,45 +62,49 @@ a:hover { color: #f3f3f3; }
   75% { transform: translate(0, 160%); } }
 
 /* Navigation */
-nav { padding: 0; background-color: rgba(42, 85, 110, 0.808); }
+.navigation { max-width: 1200px; margin: 0 auto; display: table; width: 100%; padding: 0 20px; }
 
-nav .container { max-width: 1200px; margin: 0 auto; display: table; width: 100%; padding: 0 20px; }
+.navigation > div { display: table-cell; width: 50%; height: 70px; vertical-align: middle; }
 
-nav .container > div { display: table-cell; width: 50%; height: 70px; vertical-align: middle; }
-
-nav .container a.logo { display: inline-block; cursor: pointer; font-family: "IM Fell DW Pica SC", serif; text-transform: uppercase; letter-spacing: 2px; font-size: 22px; color: #fff; }
+.navigation a.logo { display: inline-block; cursor: pointer; font-family: "IM Fell DW Pica SC", serif; text-transform: uppercase; letter-spacing: 2px; font-size: 22px; color: #fff; }
 
 .lite { opacity: 0.5; }
 
-nav .container a.logo:hover { color: inherit; opacity: 0.7; }
+.navigation a.logo:hover { color: inherit; opacity: 0.7; }
 
-nav .container a { transition: 0.3s all 0s ease; }
+.navigation a { transition: 0.3s all 0s ease; }
 
-nav .container .links { text-align: right; font-family: "IM Fell DW Pica SC", serif; height: auto; }
+.navigation .links { text-align: right; font-family: "IM Fell DW Pica SC", serif; height: auto; }
 
-nav .container .links a { font-family: "IM Fell DW Pica SC", serif; text-transform: uppercase; font-size: 22px; color: #FFF; letter-spacing: 2px; }
+.navigation .links a { font-family: "IM Fell DW Pica SC", serif; text-transform: uppercase; font-size: 22px; color: #FFF; letter-spacing: 2px; }
 
-nav .container .links a:hover { color: inherit; opacity: 0.7; }
+.navigation .links a:hover { color: inherit; opacity: 0.7; }
 
-nav .container .links > a { margin-right: 30px; }
+.navigation .links > a { margin-right: 30px; }
 
 /* Footer */
-.footer { background: rgba(42, 85, 110, 0.808); color: #f3f3f3; margin: 0.5rem; padding: 1rem; text-align: center; }
+.footer { background: #272e41; color: #f3f3f3; margin: 0.5rem; padding: 1rem; text-align: center; }
 
 .footer a { color: #f3f3f3; }
 
-.footer a:hover, .footer a:focus { background: rgba(42, 85, 110, 0.808); color: #f3f3f3; }
+.footer a:hover, .footer a:focus { background: #272e41; color: #f3f3f3; }
 
 /* Landing Page */
-#landing { background: rgba(42, 85, 110, 0.808); color: #f3f3f3; display: flex; height: 100%; text-align: center; }
+#landing { background: #272e41; color: #f3f3f3; display: flex; height: 100%; text-align: center; }
 
-.landing-image { background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/94/Starry_Night_Over_the_Rhone.jpg"); background-color: #529a9c; background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; width: 60%; height: 80%; border-radius: .5em; left: 19%; position: absolute; top: 10%; max-width: 1200px; opacity: .8; }
+#landing::before { content: ""; background-image: url(/assets/images/Quinn2.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; opacity: .6; /* Add the blur effect */ }
 
-.landing-title { background-color: rgba(236, 239, 243, 0.856); left: 10%; width: 100%; height: 30%; top: 20%; position: absolute; border-radius: .8em; text-align: match-parent; }
+.landing-image { background-position: center; background-repeat: no-repeat; background-size: cover; position: relative; width: 60%; height: 80%; border-radius: .5em; left: 19%; position: absolute; top: 10%; max-width: 1200px; opacity: .8; }
 
-.landing-subtitle { background-color: rgba(236, 239, 243, 0.856); position: absolute; border-radius: .8em; text-align: match-parent; left: 50%; width: 60%; height: 9%; top: 60%; }
+.landing-title { left: 10%; width: 100%; height: 20%; top: 30%; position: absolute; border-radius: .8em; text-align: match-parent; }
 
-.landing-subtitle h1 { position: absolute; color: rgba(42, 85, 110, 0.808); top: -80%; left: 15%; }
+.landing-subtitle { position: absolute; border-radius: .6em; text-align: match-parent; left: 50%; width: 60%; height: 9%; top: 60%; }
+
+.landing-subtitle h2 { position: absolute; color: #272e41; top: -40%; left: 2%; }
+
+.landing-subtitle2 { position: absolute; border-radius: .5em; text-align: match-parent; left: 80%; width: 30%; height: 7%; top: 77%; }
+
+.landing-subtitle2 h3 { position: absolute; color: #272e41; top: -40%; left: 2%; }
 
 .landing-title svg { position: absolute; top: 50%; margin-top: -60px; left: 40%; margin-left: -225px; }
 
@@ -210,7 +214,7 @@ nav .container .links > a { margin-right: 30px; }
 
 .timeline-wrapper .flag-wrapper { position: relative; text-align: center; }
 
-.timeline-wrapper .flag { background: rgba(42, 85, 110, 0.808); border-radius: 0.5rem; font-weight: 300; padding: 0.25rem 0.5rem; }
+.timeline-wrapper .flag { background: #272e41; border-radius: 0.5rem; font-weight: 300; padding: 0.25rem 0.5rem; }
 
 .timeline-wrapper .flag span { position: relative; transition: 0.4s; }
 
@@ -222,9 +226,9 @@ nav .container .links > a { margin-right: 30px; }
 
 .timeline-wrapper .time-wrapper { color: #f3f3f3; display: block; line-height: 0.5rem; margin-top: 0.3rem; }
 
-.timeline-wrapper .time { background: rgba(42, 85, 110, 0.808); border-radius: 0.5rem; display: inline-block; padding: .6rem; }
+.timeline-wrapper .time { background: #272e41; border-radius: 0.5rem; display: inline-block; padding: .6rem; }
 
-.timeline-wrapper .desc { background: rgba(42, 85, 110, 0.808); border-radius: 1rem; margin: 1em 0 0 0; padding: 0.75em; text-align: center; }
+.timeline-wrapper .desc { background: #272e41; border-radius: 1rem; margin: 1em 0 0 0; padding: 0.75em; text-align: center; }
 
 /* Projects Card */
 .project { border-radius: 1rem; margin: 1rem 0; padding: 0.5rem 1rem; }
