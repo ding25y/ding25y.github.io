@@ -2,8 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Ryan</title>
-    <link rel="stylesheet" href="/assets/css/styles.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icon/apple-touch-icon-A.png">
+    <title>Ryan</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/vendors.min.css">
+
+    <script src="/assets/js/vendors.min.js"></script>
+    <script src="/assets/js/app.min.js"></script>
     <link type="application/atom+xml" rel="alternate" href="/feed.xml" />
     <!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>Ryan</title>
@@ -13,50 +23,168 @@
 <meta name="description" content="Ryan is me." />
 <meta property="og:description" content="Ryan is me." />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-12-22T23:03:22-05:00" />
+<meta property="article:published_time" content="2021-01-24T20:27:46-05:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Ryan" />
 <script type="application/ld+json">
-{"datePublished":"2020-12-22T23:03:22-05:00","url":"/authors/Ryan.html","dateModified":"2020-12-22T23:03:22-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"/authors/Ryan.html"},"description":"Ryan is me.","headline":"Ryan","@type":"BlogPosting","@context":"https://schema.org"}</script>
+{"headline":"Ryan","dateModified":"2021-01-24T20:27:46-05:00","url":"/authors/Ryan.html","datePublished":"2021-01-24T20:27:46-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"/authors/Ryan.html"},"description":"Ryan is me.","@type":"BlogPosting","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
   <body>
     <nav>
-  
-    <a href="/" >
-      Home
+  <div class="container">
+    <a href="/index.html" class="logo">
+      yian
+    <span class = "lite">Diane</span>
+    ding
     </a>
-  
-    <a href="/about.html" >
-      About
-    </a>
-  
-    <a href="/blog.html" >
-      Blog
-    </a>
-  
-    <a href="/member.html" >
-      Member
-    </a>
-  
+    <div class="links">
+      <a href="assets/images/Yian-resume.pdf" target="_blank">resume</a>
+    </div>
+  </div>
 </nav>
+<!-- 或许可以做某种动画就是Yian 变成Ryan的那种 -->
+    <div id="landing">
+        <div class="landing-image">
 
-    <h1>Ryan</h1>
-<p>Yian Ding - main</p>
+            <div class="landing-title">
+                <!-- <h1 class="title-greet">Hi, I&#39;m
+                    <span class="highlight-title">Diane</span>
+                </h1> -->
+                <!-- Wave effect -->
+                <link href='https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap' rel='stylesheet' type='text/css'>
 
-<p>Ryan is me.</p>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="800px" height="240px" xml:space="preserve">
+                    <defs>
+                        <pattern id="water" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
+                        <path fill="#000" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
+                        </pattern>
+                        
+                        <text id="text" transform="translate(2,116)" font-family="Nanum Pen Script" font-size="5rem">Hi, I'm Diane</text>
+                        
+                        <mask id="text-mask">
+                        <use x="0" y="0" xlink:href="#text" opacity="1" fill="#fff"/>
+                        </mask>
+                        
+                        <g id="eff">
+                        <use x="0" y="0" xlink:href="#text" fill="#a2a3a5"/>
+                    
+                    <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" x="-300" y="50" width="1200" height="120" opacity="0.3">
+                        <animate attributeType="xml" attributeName="x" from="-300" to="0" repeatCount="indefinite" dur="2s"/>
+                    </rect>
+                    <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="45" width="1600" height="120" opacity="0.3">
+                        <animate attributeType="xml" attributeName="x" from="-400" to="0" repeatCount="indefinite" dur="3s"/>
+                    </rect>
+                        
+                    <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="55" width="800" height="120" opacity="0.3">
+                        <animate attributeType="xml" attributeName="x" from="-200" to="0" repeatCount="indefinite" dur="1.4s"/>
+                    </rect>
+                        <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="55" width="2000" height="120" opacity="0.3">
+                        <animate attributeType="xml" attributeName="x" from="-500" to="0" repeatCount="indefinite" dur="2.8s"/>
+                    </rect>
+                        </g>
+                    </defs>
+                    
+                        <use xlink:href="#eff" opacity="0.9" style="mix-blend-mode:color-burn"/>
+
+                </svg>
+                <!-- End WAVE effect -->
+            </div>
+            <div class="landing-subtitle"> 
+                <!-- <h1 class="title-role">
+                    <span id="txt-rotate" data-period="2000"
+                      data-rotate='["Data Scientist in make", "scroll down for more."]'
+                    >
+                    </span>
+                </h1> -->
+                <h1>Data Scientist</h1>
+            </div>   
+
+        </div>
+        <div class="box">
+            <span></span>
+            <span></span>
+            <span></span>
+            
+        </div>
+</div>
+
+    <div class="layout" id="layout">
+        <section class="card neumorphism-card-big">
+          <h1 class="title">About me</h1>
+<p class="description" data-aos="fade-down">
+    I earned my B.A. at Mount Holyoke College, MA with a dual degree of Data Science and Psychology. I'm currently pursuing master's in Data Science at Northeastern University. 
+</p>
+
+        </section>
+        <section class="card neumorphism-card-big">
+          <h1 class="title"></h1>
+
+<div id="skills">
+  <input type="radio" id="all" name="filter" checked />
+  <label class="filter-button neumorphism-button" for="all">All</label>
+  <input type="radio" id="language" name="filter" />
+  <label class="filter-button neumorphism-button" for="language">Languages</label>
+  <input type="radio" id="framework" name="filter" />
+  <label class="filter-button neumorphism-button" for="framework">Frameworks</label>
+  <input type="radio" id="tool" name="filter" />
+  <label class="filter-button neumorphism-button" for="tool">Tools</label>
+
+  
+  
+  
+</div>
+
+        </section>
+
+        <section class="card neumorphism-card-big">
+          <h1 class="title"></h1>
+<p class="subtitle">
+  For more information, have a look at my
+  <a class="highlight-link" href="" target="_blank" rel="noreferrer">
+    curriculum vitae
+  </a>.
+</p>
+
+<div class="timeline-wrapper">
+  <ul class="timeline">
+    
+  </ul>
+</div>
+
+        </section>
+
+        <section class="card neumorphism-card-big">
+          
 
 
 
-<h2>Posts</h2>
-<ul>
-	
-	
-		<li><a href="/2020/12/21/Why-Ryan.html">Second, not the last, I hope</a></li>
-	
-		<li><a href="/2020/12/21/Ryan.html">First Post</a></li>
-	
-</ul>
+
+
+        </section>
+
+      <section class="card neumorphism-card-big">
+        <h1 class="title"></h1>
+<p class="subtitle"></p>
+
+<div class="contact-icons">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</div>
+
+      </section>
+
+    </div>
   </body>
 </html>
